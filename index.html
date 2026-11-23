@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tianyuan Xu — AI, product design, and human–computer interaction.">
+  <title>Tianyuan Xu</title>
+  <style>
+    :root { color-scheme: light; background: #f6f4ed; color: #192820; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { max-width: 72rem; margin: auto; padding: 0 clamp(1.25rem, 6vw, 5rem); }
+    header, footer { padding: 1.5rem 0; display: flex; flex-wrap: wrap; gap: .75rem 2rem; justify-content: space-between; }
+    header { border-bottom: 1px solid #bbc3b7; }
+    a { color: #27523f; text-underline-offset: .23em; }
+    main { padding: clamp(4rem, 11vw, 9rem) 0; }
+    h1, h2 { font-family: Georgia, serif; font-weight: normal; margin: 0; }
+    h1 { font-size: clamp(3rem, 10vw, 8rem); line-height: 1; letter-spacing: -.065em; }
+    .intro { max-width: 32ch; font-size: clamp(1.25rem, 3vw, 2rem); line-height: 1.4; }
+    section { margin-top: 4rem; border-top: 1px solid #bbc3b7; padding-top: 1.75rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.125rem; margin: 0; }
+    section p { max-width: 58ch; line-height: 1.65; }
+    .work { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+    article { border: 1px solid #bbc3b7; padding: 1.25rem; }
+    article p { margin-bottom: 0; }
+    nav { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
+    footer { border-top: 1px solid #bbc3b7; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Tianyuan Xu</strong>
+    <nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#interests">Research interests</a></nav>
+  </header>
+  <main>
+    <h1>Tianyuan Xu</h1>
+    <p class="intro">I’m interested in AI, product design, and how people interact with technology.</p>
+    <section id="work" aria-labelledby="work-heading">
+      <h2 id="work-heading">Selected work</h2>
+      <div class="work">
+        <article>
+          <h3>FIRST Robotics Competition</h3>
+          <p>I led engineering for my school’s robotics team and worked on robot controls, 3D modeling, and CNC fabrication. Our team finished second at the Türkiye Regional.</p>
+        </article>
+        <article>
+          <h3>Electrode design research</h3>
+          <p>For my high school graduation project, I designed an electrode based on the NACA 66 airfoil to improve gas–liquid mixing. I evaluated the design with fluid simulations and physical experiments.</p>
+        </article>
+        <article>
+          <h3>Debate team leadership</h3>
+          <p>I served as debate society president and school team captain. Our team finished second at a national high school debate competition.</p>
+        </article>
+      </div>
+    </section>
+    <section id="interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Research interests</h2>
+      <p>How can we turn advances in AI into reliable, accessible products that help people solve everyday problems?</p>
+    </section>
+  </main>
+  <footer><a href="https://github.com/TenneyXu">GitHub</a></footer>
+</body>
+</html>
