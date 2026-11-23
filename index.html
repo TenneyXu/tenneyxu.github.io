@@ -17,6 +17,9 @@
     h1 { font-size: clamp(3rem, 10vw, 8rem); line-height: 1; letter-spacing: -.065em; }
     .affiliation { color: #395746; font-weight: 600; margin: 1.25rem 0 0; }
     .intro { max-width: 40ch; font-size: clamp(1.25rem, 3vw, 1.75rem); line-height: 1.45; }
+    .profile-links { margin-top: 1.75rem; }
+    .profile-links a { display: inline-flex; align-items: center; min-height: 2.75rem; border: 1px solid #bbc3b7; border-radius: .5rem; padding: .45rem .8rem; font-weight: 600; }
+    .profile-links a:hover { background: #e7ece4; text-decoration-thickness: 2px; }
     .hero { display: grid; grid-template-columns: minmax(0, 1fr) clamp(12rem, 24vw, 17rem); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
     .portrait { display: block; width: 100%; height: auto; border-radius: 1rem; }
     @media (max-width: 640px) {
@@ -30,6 +33,7 @@
     .work { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
     article { border: 1px solid #bbc3b7; padding: 1.25rem; }
     article p { margin-bottom: 0; }
+    article .role { margin: .45rem 0 0; color: #395746; font-size: .875rem; font-weight: 600; }
     nav { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
     .research { background: #19362b; color: #f6f4ed; padding: clamp(1.5rem, 5vw, 3rem); border: 0; border-radius: 1rem; }
     .research p { color: #e0eae2; }
@@ -39,7 +43,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="top">
     <strong>Tianyuan Xu</strong>
     <nav aria-label="Main navigation"><a href="#interests">Research</a><a href="#work">Selected work</a></nav>
   </header>
@@ -47,8 +51,12 @@
     <div class="hero">
       <div>
         <h1>Tianyuan Xu</h1>
-        <p class="affiliation">Duke Kunshan University · Class of 2030</p>
+        <p class="affiliation"><a href="https://www.dukekunshan.edu.cn/">Duke Kunshan University</a> · Class of 2030</p>
         <p class="intro">I’m interested in how robots perceive the world and how people interact with intelligent systems.</p>
+        <nav class="profile-links" aria-label="Public profiles">
+          <a href="https://github.com/TenneyXu">GitHub</a>
+          <a href="https://edge-intelligence-lab.github.io/Robotic-Group/#people">Lab profile</a>
+        </nav>
       </div>
       <img class="portrait" src="portrait.jpg" width="719" height="960" alt="Photo of Tianyuan Xu">
     </div>
@@ -63,19 +71,22 @@
       <div class="work">
         <article>
           <h3>FIRST Robotics Competition</h3>
+          <p class="role">Engineering lead</p>
           <p>I led engineering for my school’s robotics team and worked on robot controls, 3D modeling, and CNC fabrication. Our team finished second at the Türkiye Regional.</p>
         </article>
         <article>
           <h3>Electrode design research</h3>
+          <p class="role">High school graduation project</p>
           <p>For my high school graduation project, I designed an electrode based on the NACA 66 airfoil to improve gas–liquid mixing. I evaluated the design with fluid simulations and physical experiments.</p>
         </article>
         <article>
           <h3>Debate team leadership</h3>
+          <p class="role">Debate society president and team captain</p>
           <p>I served as debate society president and school team captain. Our team finished second at a national high school debate competition.</p>
         </article>
       </div>
     </section>
   </main>
-  <footer><a href="https://github.com/TenneyXu">GitHub</a></footer>
+  <footer><span>Tianyuan Xu</span><a href="#top">Back to top</a></footer>
 </body>
 </html>
