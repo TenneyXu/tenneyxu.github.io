@@ -17,6 +17,12 @@
     h1 { font-size: clamp(3rem, 10vw, 8rem); line-height: 1; letter-spacing: -.065em; }
     .affiliation { color: #395746; font-weight: 600; margin: 1.25rem 0 0; }
     .intro { max-width: 40ch; font-size: clamp(1.25rem, 3vw, 1.75rem); line-height: 1.45; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) clamp(12rem, 24vw, 17rem); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
+    .portrait { display: block; width: 100%; height: auto; border-radius: 1rem; }
+    @media (max-width: 640px) {
+      .hero { grid-template-columns: 1fr; }
+      .portrait { max-width: 14rem; }
+    }
     section { margin-top: clamp(2.5rem, 6vw, 4rem); border-top: 1px solid #bbc3b7; padding-top: 1.75rem; }
     h2 { font-size: 2rem; }
     h3 { font-size: 1.125rem; margin: 0; }
@@ -38,9 +44,14 @@
     <nav aria-label="Main navigation"><a href="#interests">Research</a><a href="#work">Selected work</a></nav>
   </header>
   <main>
-    <h1>Tianyuan Xu</h1>
-    <p class="affiliation">Duke Kunshan University · Class of 2030</p>
-    <p class="intro">I’m interested in how robots perceive the world and how people interact with intelligent systems.</p>
+    <div class="hero">
+      <div>
+        <h1>Tianyuan Xu</h1>
+        <p class="affiliation">Duke Kunshan University · Class of 2030</p>
+        <p class="intro">I’m interested in how robots perceive the world and how people interact with intelligent systems.</p>
+      </div>
+      <img class="portrait" src="portrait.jpg" width="719" height="960" alt="Photo of Tianyuan Xu">
+    </div>
     <section class="research" id="interests" aria-labelledby="interests-heading">
       <h2 id="interests-heading">Research</h2>
       <p>I’m a member of the Edge Intelligence Robotic Group at Duke Kunshan University. The group studies how robots combine sensor inputs such as vision and touch, learn to act, and share control with people.</p>
