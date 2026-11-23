@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tianyuan Xu — AI, product design, and human–computer interaction.">
-  <title>Tianyuan Xu</title>
+  <meta name="description" content="Tianyuan Xu, Duke Kunshan University Class of 2030 and member of the Edge Intelligence Robotic Group. Interests in robotics, AI, and human–computer interaction.">
+  <title>Tianyuan Xu | Robotics &amp; AI</title>
   <style>
     :root { color-scheme: light; background: #f6f4ed; color: #192820; font-family: system-ui, sans-serif; }
     * { box-sizing: border-box; }
@@ -12,11 +12,12 @@
     header, footer { padding: 1.5rem 0; display: flex; flex-wrap: wrap; gap: .75rem 2rem; justify-content: space-between; }
     header { border-bottom: 1px solid #bbc3b7; }
     a { color: #27523f; text-underline-offset: .23em; }
-    main { padding: clamp(4rem, 11vw, 9rem) 0; }
+    main { padding: clamp(3rem, 8vw, 6.5rem) 0; }
     h1, h2 { font-family: Georgia, serif; font-weight: normal; margin: 0; }
     h1 { font-size: clamp(3rem, 10vw, 8rem); line-height: 1; letter-spacing: -.065em; }
-    .intro { max-width: 32ch; font-size: clamp(1.25rem, 3vw, 2rem); line-height: 1.4; }
-    section { margin-top: 4rem; border-top: 1px solid #bbc3b7; padding-top: 1.75rem; }
+    .affiliation { color: #395746; font-weight: 600; margin: 1.25rem 0 0; }
+    .intro { max-width: 40ch; font-size: clamp(1.25rem, 3vw, 1.75rem); line-height: 1.45; }
+    section { margin-top: clamp(2.5rem, 6vw, 4rem); border-top: 1px solid #bbc3b7; padding-top: 1.75rem; }
     h2 { font-size: 2rem; }
     h3 { font-size: 1.125rem; margin: 0; }
     section p { max-width: 58ch; line-height: 1.65; }
@@ -24,17 +25,28 @@
     article { border: 1px solid #bbc3b7; padding: 1.25rem; }
     article p { margin-bottom: 0; }
     nav { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
+    .research { background: #19362b; color: #f6f4ed; padding: clamp(1.5rem, 5vw, 3rem); border: 0; border-radius: 1rem; }
+    .research p { color: #e0eae2; }
+    .research a { color: #fff; font-weight: 600; }
+    :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
     footer { border-top: 1px solid #bbc3b7; }
   </style>
 </head>
 <body>
   <header>
     <strong>Tianyuan Xu</strong>
-    <nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#interests">Research interests</a></nav>
+    <nav aria-label="Main navigation"><a href="#interests">Research</a><a href="#work">Selected work</a></nav>
   </header>
   <main>
     <h1>Tianyuan Xu</h1>
-    <p class="intro">I’m interested in AI, product design, and how people interact with technology.</p>
+    <p class="affiliation">Duke Kunshan University · Class of 2030</p>
+    <p class="intro">I’m interested in how robots perceive the world and how people interact with intelligent systems.</p>
+    <section class="research" id="interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Research</h2>
+      <p>I’m a member of the Edge Intelligence Robotic Group at Duke Kunshan University. The group studies how robots combine sensor inputs such as vision and touch, learn to act, and share control with people.</p>
+      <p>I’m also interested in AI product design and what makes intelligent systems reliable and accessible in everyday use.</p>
+      <a href="https://edge-intelligence-lab.github.io/Robotic-Group/">Explore the Edge Intelligence Robotic Group</a>
+    </section>
     <section id="work" aria-labelledby="work-heading">
       <h2 id="work-heading">Selected work</h2>
       <div class="work">
@@ -51,10 +63,6 @@
           <p>I served as debate society president and school team captain. Our team finished second at a national high school debate competition.</p>
         </article>
       </div>
-    </section>
-    <section id="interests" aria-labelledby="interests-heading">
-      <h2 id="interests-heading">Research interests</h2>
-      <p>How can we turn advances in AI into reliable, accessible products that help people solve everyday problems?</p>
     </section>
   </main>
   <footer><a href="https://github.com/TenneyXu">GitHub</a></footer>
